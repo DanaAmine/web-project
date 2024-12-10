@@ -1,0 +1,80 @@
+/* loginpage.css */
+.color {
+    background-color: #ffffff;
+}
+
+.gradient-custom {
+    min-height: 100vh;
+}
+
+.card {
+    background-color: #ffffff !important;
+    border: none !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card.text-white {
+    color: #333333 !important;
+}
+
+.fw-bold.text-uppercase {
+    color: #333333;
+    font-size: 28px;
+    letter-spacing: -0.5px;
+}
+
+.text-white-50 {
+    color: #666666 !important;
+}
+
+.form-control-lg {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 12px 16px;
+    background: #ffffff !important;
+    color: #333333 !important;
+}
+
+.form-control-lg:focus {
+    border-color: #f4a261;
+    box-shadow: 0 0 0 3px rgba(244, 162, 97, 0.1);
+}
+
+.form-control-lg::placeholder {
+    color: #999999;
+}
+
+.btn-outline-light {
+    background-color: #f4a261 !important;
+    border: none !important;
+    color: #ffffff !important;
+    border-radius: 8px;
+    padding: 12px 32px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: #e76f51 !important;
+    transform: translateY(-2px);
+}
+
+a.text-white-50 {
+    color: #f4a261 !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a.text-white-50:hover {
+    color: #e76f51 !important;
+}
+
+.form-outline.form-white {
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .card-body {
+        padding: 2rem !important;
+    }
+}
