@@ -2,7 +2,7 @@
 
 $server = "localhost";
 $user = "root";
-$pass = "romy@ROMY2024";
+$pass = "RomyTou@123";
 $database = "shop";
 
 
