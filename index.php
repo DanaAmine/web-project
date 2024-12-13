@@ -11,9 +11,9 @@
 	          	</div>
 		          <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
-		          		<span class="subheading">MyDay eCommerce Shop</span>
+		          		<span class="subheading">KommTech eCommerce Shop</span>
 		          		<div class="horizontal">
-		          			<h3 class="vr" style="background-image: url(images/divider.jpg);">Stablished Since 2022</h3>
+		          			<h3 class="vr" style="background-image: url(images/divider.jpg);">Stablished Since 2024/h3>
 				            <h1 class="mb-4 mt-3">Choose Your Own <br><span>Laptop &amp; it color</span></h1>
 				            
 				            <p><a href="#" class="btn btn-primary px-5 py-3 mt-3">Discover Now</a></p>
@@ -32,7 +32,7 @@
 	          	</div>
 		          <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
-		          		<span class="subheading">MyDay eCommerce Shop</span>
+		          		<span class="subheading">KommTech eCommerce Shop</span>
 		          		<div class="horizontal">
 		          			<h3 class="vr" style="background-image: url(images/divider.jpg);">Shop Online</h3>
 				            <h1 class="mb-4 mt-3">A Thouroughly <span>Modern</span> Screens</h1>
@@ -242,7 +242,7 @@
     		<div class="row">
     			<div class="col-sm col-md-6 col-lg ftco-animate">
     				<div class="product">
-    					<a href="#" class="img-prod"><img class="img-fluid" src="images/Laps.jpg" alt="Colorlib Template">
+    					<a href="#" class="img-prod"><img class="img-fluid" src="images/laptops.jpg" alt="Colorlib Template">
     						<!-- <span class="status">30%</span> -->
     						<div class="overlay"></div>
     					</a>
@@ -271,7 +271,7 @@
     			</div>
     			<div class="col-sm col-md-6 col-lg ftco-animate">
     				<div class="product">
-    					<a href="#" class="img-prod"><img class="img-fluid" src="images/TVs.jpg" alt="Colorlib Template">
+    					<a href="#" class="img-prod"><img class="img-fluid" src="images/teles.jpg" alt="Colorlib Template">
 	    					<div class="overlay"></div>
 	    				</a>
     					<div class="text py-3 px-3">
@@ -326,7 +326,7 @@
 				
     			<div class="col-sm col-md-6 col-lg ftco-animate">
     				<div class="product">
-    					<a href="#" class="img-prod"><img class="img-fluid" src="images/Refrigerators.png" alt="Colorlib Template">
+    					<a href="#" class="img-prod"><img class="img-fluid" src="images/refris.jpg" alt="Colorlib Template">
     						<div class="overlay"></div>
     					</a>
     					<div class="text py-3 px-3">
