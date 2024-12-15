@@ -1,7 +1,7 @@
 <?php 
 include "header.php";
 include "Nav.php";
-//include 'config.php';
+include 'config.php';
 
 error_reporting(0);
 
