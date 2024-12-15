@@ -1,7 +1,7 @@
 <?php 
 include "header.php";
 include "Nav.php";
-include 'config.php';
+//include 'config.php';
 
 error_reporting(0);
 
@@ -31,7 +31,7 @@ function getBestSellers($conn) {
                     </div>
                     <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
                         <div class="text">
-                            <span class="subheading">MyDay eCommerce Shop</span>
+                            <span class="subheading">KommTech eCommerce Shop</span>
                             <div class="horizontal">
                                 <h3 class="vr" style="background-image: url(images/divider.jpg);">Established Since 2022</h3>
                                 <h1 class="mb-4 mt-3">Choose Your Own <br><span>Laptop &amp; its color</span></h1>
@@ -51,7 +51,7 @@ function getBestSellers($conn) {
                     </div>
                     <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
                         <div class="text">
-                            <span class="subheading">MyDay eCommerce Shop</span>
+                            <span class="subheading">KommTech eCommerce Shop</span>
                             <div class="horizontal">
                                 <h3 class="vr" style="background-image: url(images/divider.jpg);">Shop Online</h3>
                                 <h1 class="mb-4 mt-3">A Thoroughly <span>Modern</span> Screens</h1>

@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>MyDay</title>
+    <title>KommTech</title>
 	<link rel="stylesheet" href="css/homestyle.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -39,11 +39,11 @@
 		    		<div class="row d-flex">
 		    			<div class="col-md pr-4 d-flex topper align-items-center">
 					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-						    <span class="text">+962-77-809-1935</span>
+						    <span class="text">0666334422</span>
 					    </div>
 					    <div class="col-md pr-5 d-flex topper align-items-center">
 					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-						    <span class="text">basil.ab@icloud.com</span>
+						    <span class="text">mama.marouainfo11@gmail.com</span>
 					    </div>
 						<?php
 						if(!isset($_SESSION['id'])){
