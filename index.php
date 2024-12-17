@@ -190,8 +190,7 @@ function getBestSellers($conn) {
 </section>
 
 <!-- Counter Section -->
-<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/BG.jpg);">
-    <!-- Your existing counter section code here -->
+<section class="ftco-section ftco-counter img" id="counter-section" style="background-image: url(images/a.png); height: 500px;">
 </section>
 
 <!-- Newsletter Section -->

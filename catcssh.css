@@ -1,6 +1,6 @@
 
 :root {
-    --main-color1: #010038;
+    --main-color1: #5e5db1;
     --main-color2: #293A80;
     --main-color3: #537EC5;
     --main-color4: #F39422;
@@ -34,14 +34,14 @@ margin-left: 50px;
 }
 
 .table-striped>thead>tr>th {
-  background-color: #010038;
+  background-color: #5e5db1;
   color: white;
 }
 .addcatformbox{
     display: flex;
     justify-content: center;
     margin-top: 4%;
-    border: solid 1px #010038;
+    border: solid 1px #5e5db1;
     padding: 30px;
     border-radius: 2%;
     box-shadow: 0 5px 10px #293a80b7;
@@ -68,7 +68,7 @@ margin-left: 50px;
     display: flex;
     justify-content: center;
     margin-top: 4%;
-    border: solid 1px #010038;
+    border: solid 1px #5e5db1;
     padding: 30px;
     border-radius: 2%;
     box-shadow: 0 5px 10px #293a80b7;
@@ -119,7 +119,7 @@ margin-left: 50px;
     display: flex;
     justify-content: center;
     margin-top: 7%;
-    border: solid 1px #010038;
+    border: solid 1px #5e5db1;
     padding: 30px;
     border-radius: 2%;
     width: 35%;
@@ -128,7 +128,7 @@ margin-left: 50px;
 }
 .headerupdate{
     padding: 3%;
-   color: #010038;
+   color: #5e5db1;
    display: flex;
    justify-content: start;
 }
@@ -148,7 +148,7 @@ margin-left: 50px;
     display: flex;
     justify-content: center;
     margin-top: 5%;
-    border: solid 1px #010038;
+    border: solid 1px #5e5db1;
     padding: 25px;
     border-radius: 2%;
     width: 30%;
@@ -169,7 +169,7 @@ margin-left: 50px;
 .formbox{
     display: flex;
     justify-content: center;
-    border: solid 1px #010038;
+    border: solid 1px #5e5db1;
     padding: 25px;
     border-radius: 2%;
     width: 70%;
@@ -190,14 +190,14 @@ margin-left: 50px;
 .containeradmin{
     display: flex;
     justify-content: center;
-    border: solid 1px #010038;
+    border: solid 1px #5e5db1;
     padding: 10%;
     border-radius: 2%;
     width: 70%;
     box-shadow: 0 8px 17px #293a80b7; 
     margin-left: 20%;
     display: block;
-    background-color: #010038;
+    background-color: #5e5db1;
     
 }
 .subheadingadmin{

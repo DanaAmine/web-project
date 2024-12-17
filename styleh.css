@@ -1,5 +1,5 @@
 :root {
-    --main-color1: #010038;
+    --main-color1: #5e5db1;
     --main-color2: #293A80;
     --main-color3: #537EC5;
     --main-color4: #F39422;
@@ -31,7 +31,7 @@ background: white;
 .side-nav{
     width: 250px;
     height: 300vh;
-    background: #010038;
+    background: #5e5db1;
     position: fixed;
     top: 0%;
     left: 0%;
@@ -87,7 +87,7 @@ margin-right: 30px;
 
 }
 .nav-links li:hover a{
-    color: #010038;
+    color: #5e5db1;
     transition: 0.3s;
     font-weight: bold;
 }
