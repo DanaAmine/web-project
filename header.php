@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?php session_start(); ?> // conserver les infos des users 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -105,11 +105,12 @@
 
 <body class="goto-here">
     <div class="top-bar">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-4">
+        <div class="container">   <!-- /boots -->        
+            <div class="row align-items-center">     <!-- /boots -->                          
+				
+                <div class="col-md-4">  <!-- sys grille bootstrap responsivite  -->
                     <div class="contact-info">
-                        <div class="icon d-flex justify-content-center align-items-center">
+                        <div class="icon d-flex justify-content-center align-items-center">  <!-- centrer verticalement -->
                             <span class="icon-phone2"></span>
                         </div>
                         <span>0666334422</span>

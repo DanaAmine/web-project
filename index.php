@@ -6,13 +6,13 @@ include 'config.php';
 error_reporting(0);
 
 // Function to get best sellers
-function getBestSellers($conn) {
+function getBestSellers($conn) { // pour la cnx a la bdd 
     $sql = "SELECT * FROM products WHERE is_bestseller = 1 LIMIT 10";
     $result = $conn->query($sql);
     $products = array();
     
-    if ($result->num_rows > 0) {
-        while($row = $result->fetch_assoc()) {
+    if ($result->num_rows > 0) {// si on a des lignes dans la bdd alors... 
+        while($row = $result->fetch_assoc()) { // extraire chaque ligne dans row
             $products[] = $row;
         }
     }
@@ -22,7 +22,7 @@ function getBestSellers($conn) {
 
 <!-- Hero Section -->
 <section id="home-section" class="hero">
-    <div class="home-slider js-fullheight owl-carousel">
+    <div class="home-slider js-fullheight owl-carousel">  <!-- bib js pour les slides   -->
         <div class="slider-item js-fullheight">
             <div class="overlay"></div>
             <div class="container-fluid p-0">
@@ -66,7 +66,7 @@ function getBestSellers($conn) {
 </section>
 
 <!-- Features Section -->
-<section class="ftco-section ftco-no-pb ftco-no-pt bg-light">
+<section class="ftco-section ftco-no-pb ftco-no-pt bg-light"> <!-- stelyser les sections -->
     <div class="container">
         <div class="row">
             <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/Wash.png);">
@@ -139,7 +139,8 @@ function getBestSellers($conn) {
                     <a href="product.php?id=<?php echo $product['id']; ?>" class="img-prod">
                         <img class="img-fluid" src="images/<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>">
                         <?php if($product['discount'] > 0) : ?>
-                        <span class="status"><?php echo $product['discount']; ?>%</span>
+                        <span class="status"><?php echo $product['discount']; ?>%</span>    
+                        <!-- si il ya une promo lafficher  -->
                         <?php endif; ?>
                         <div class="overlay"></div>
                     </a>
@@ -198,7 +199,7 @@ function getBestSellers($conn) {
     <!-- Your existing newsletter section code here -->
 </section>
 
-<!-- Add cart functionality JavaScript -->
+<!-- ajouterr new cart functionality js -->
 <script>
 function addToCart(productId, productName, productPrice, productImage) {
     $.ajax({
@@ -242,7 +243,7 @@ $(document).ready(function() {
 });
 </script>
 
-<!-- Add custom CSS for cart buttons -->
+<!-- ajouter custom CSS for cart buttons -->
 <style>
 .add-to-cart-form {
     flex: 1;
