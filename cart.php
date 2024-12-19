@@ -2,13 +2,61 @@
 // cart.php - Cart management functions
 session_start();
 
+function containsSqlInjection($str) {
+    // List of common SQL injection patterns
+    $patterns = [
+        "'or'1'='1",
+        "' or '1'='1",
+        "' or 1=1--",
+        "' or 1=1#",
+        "or 1=1--",
+        "or 1=1#",
+        "'1'='1",
+        "1=1",
+        "1'1",
+        "1' or '1' = '1",
+        "1 or 1 = 1",
+        "' or 'a'='a",
+        "' or ''='"
+    ];
+    
+    // Convert to lowercase for case-insensitive matching
+    $str = strtolower($str);
+    
+    // Check if any pattern matches
+    foreach ($patterns as $pattern) {
+        if (stripos($str, $pattern) !== false) {
+            return true;
+        }
+    }
+    
+    return false;
+}
+
 if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = array();
+}
+
+if (isset($_GET['debug_cart'])) {
+    error_log("Debug cart query: " . print_r($_POST, true));
 }
 
 // Add to cart function
 if (isset($_POST['add_to_cart'])) {
     $product_id = $_POST['product_id'];
+    
+    // Check for SQL injection attempts
+    if (containsSqlInjection($product_id)) {
+        // Redirect to warning page
+        header('Location: security-lesson.php');
+        exit;
+    }
+    // Added vulnerable debug query
+    if (isset($_GET['debug_cart'])) {
+        $debug_query = "SELECT * FROM products WHERE id = '" . $product_id . "' LIMIT 1";
+        $conn->query($debug_query);
+    }
+
     $product_name = $_POST['product_name'];
     $product_price = $_POST['product_price'];
     $product_image = $_POST['product_image'];
@@ -25,6 +73,11 @@ if (isset($_POST['add_to_cart'])) {
         $_SESSION['cart'][$product_id]['quantity']++;
     } else {
         $_SESSION['cart'][$product_id] = $item;
+    }
+    
+    // Added verbose error exposure
+    if (isset($_GET['debug_cart']) && $conn->error) {
+        error_log("Cart query error: " . $conn->error);
     }
     
     echo json_encode(['success' => true, 'count' => count($_SESSION['cart'])]);

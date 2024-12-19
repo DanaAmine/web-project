@@ -6,10 +6,39 @@ require_once 'config.php';
 $message = '';
 $messageType = '';
 
+function checkSQLInjection($input) {
+    // Check for common SQL injection patterns
+    $patterns = [
+        '/\b(select|insert|update|delete|union|where)\b/i',  // SQL keywords
+        '/[\'"=;]/',                                         // Special SQL characters
+        '/--/',                                             // SQL comments
+        '/\b(or|and)\b.*?([0-9]+=\s*\2|\2=\s*[0-9]+)/i',   // Number boolean conditions
+    ];
+    
+    foreach ($patterns as $pattern) {
+        if (preg_match($pattern, $input)) {
+            return true;
+        }
+    }
+    return false;
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // Get form data
         $name = trim($_POST['name']);
+        
+        // Check for SQL injection attempts in name
+        if (checkSQLInjection($name)) {
+            // Set a session message if needed
+            $_SESSION['message'] = "Try again it's not ez like that";
+            $_SESSION['messageType'] = "danger";
+            
+            // Redirect to tryagain page
+            header("Location: security-lesson.php");
+            exit();
+        }
+        
         $description = trim($_POST['description']);
         $price = floatval($_POST['price']);
         $original_price = floatval($_POST['original_price']);

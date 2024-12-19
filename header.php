@@ -1,4 +1,4 @@
-<?php session_start(); ?> // conserver les infos des users 
+<?php session_start(); ?>  <!-- conserver les infos des users  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
